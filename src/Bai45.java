@@ -1,7 +1,9 @@
-public class bai45 {
+public class Bai45 {
     public static void main(String[] args) {
-        int chieudai=30;
-        int chieurong=25;
+        //tính dienj tích=dài * rong=PI * R * R
+        //tính chu vi = (dài+rong)*2 = 2 * PI * R
+        int chieudai = 30;
+        int chieurong = 25;
         int bankinh=40;
         double S=Math.PI * bankinh*bankinh;
         double cv=2* Math.PI * bankinh;
