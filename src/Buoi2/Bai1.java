@@ -1,4 +1,4 @@
-package buoi2;
+package Buoi2;
 
 import java.util.Scanner;
 //Nhập số tuwf bàn phím tính +-*/

@@ -1,4 +1,4 @@
-package buoi2;
+package Buoi2;
 
 public class Bai8 {
     //ép kiểu một số từ double -> int, long, float

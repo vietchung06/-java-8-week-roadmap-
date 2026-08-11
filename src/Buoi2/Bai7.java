@@ -1,4 +1,4 @@
-package buoi2;
+package Buoi2;
 
 import java.util.Scanner;
 //công thức tính lãi ngaan hàng lãi kép

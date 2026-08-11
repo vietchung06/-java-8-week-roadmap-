@@ -1,4 +1,4 @@
-package buoi2;
+package Buoi2;
 
 import java.util.Scanner;
 // bài kiểm tra 3 cạnh có hợp leej thành hình tam giác

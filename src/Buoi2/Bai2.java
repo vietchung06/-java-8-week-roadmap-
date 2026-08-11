@@ -1,4 +1,4 @@
-package buoi2;
+package Buoi2;
 
 public class Bai2 {
     public static void main(String[] args) {
