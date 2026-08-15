@@ -14,7 +14,7 @@ public class Bai4 {
             } else if (i % 5 == 0) {
                 System.out.println("Buzz");
             }else {
-                System.out.println(+i);
+                System.out.println(i);
             }
 
         }

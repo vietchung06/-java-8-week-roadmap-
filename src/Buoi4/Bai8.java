@@ -1,7 +1,7 @@
 package Buoi4;
 
 import java.util.Scanner;
-
+//8.Tính dãy Fibonacci: in n số đầu tiên của dãy 1, 1, 2, 3, 5, 8...
 public class Bai8 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -17,7 +17,7 @@ public class Bai8 {
             a = b;
             b = c;
 
-        }
+        }//4 số đầu
     }
 }
 //1 1 2

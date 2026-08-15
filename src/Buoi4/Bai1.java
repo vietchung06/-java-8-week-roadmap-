@@ -10,7 +10,7 @@ public class Bai1 {
 
         for (int i = 1; i <= 10; i ++){
 
-            System.out.println(+so + "x" + i + "=" + (so * i));
+            System.out.println(so + "x" + i + "=" + (so * i));
 
         }
 

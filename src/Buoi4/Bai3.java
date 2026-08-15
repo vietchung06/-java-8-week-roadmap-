@@ -14,6 +14,11 @@ public class Bai3 {
         for (int i = 1; i <= so; i++) {
             if (so % i == 0) {
                 dem++;
+                if (dem > 2){
+                    System.out.println(so + " không phải số nguyên tố");
+                    return;
+
+                }
             }
         }
 

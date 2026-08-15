@@ -10,13 +10,14 @@ public class Bai2 {
 //
 //        }
 //        System.out.println("Tổng 1->100 ="+ sum);
-        for(int i = 1; i <= 100; i++){
-            if(i % 2 != 0){
-                continue;
-            }
-            sum += i;
+        for(int i = 1; i <= 50; i++){
+//            if(i % 2 != 0){
+//                continue;
+//            }
+            sum += i * 2 ;
 
-        }
+
+        }// i =1 tong 2 i = 2 tong 6 i= 3 tong = 12 i=4 tong 20
         System.out.println("Tổng các số chẵn="+ sum);
     }
 }

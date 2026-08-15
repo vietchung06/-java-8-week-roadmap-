@@ -18,7 +18,7 @@ public class Bai32 {
                }
            }
              if (dem == 2 ){
-                 System.out.println(+ so +"");
+                 System.out.println( so +"");
          }
 
          }

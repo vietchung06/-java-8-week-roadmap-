@@ -21,7 +21,7 @@ public class Bai11 {
         int bBanDau= b;
 
         while (b != 0){
-            int soDu = a % b;      //a=12 b=16
+            int soDu = a % b;      //a=16 b=12  soDu = 4  a=12 b=4 0
             a = b;
             b = soDu;
         }
