@@ -3,7 +3,7 @@ package Buoi5;
 
 import java.util.Arrays;
 import java.util.Scanner;
-
+//3.	Đảo ngược mảng
 public class Bai3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

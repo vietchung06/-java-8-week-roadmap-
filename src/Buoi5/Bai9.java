@@ -1,7 +1,7 @@
 package Buoi5;
 
 import java.util.Scanner;
-
+//9.	Đếm số nguyên âm, phụ âm, chữ số trong một chuỗi
 public class Bai9 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

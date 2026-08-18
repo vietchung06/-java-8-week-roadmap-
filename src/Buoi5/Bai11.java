@@ -18,5 +18,22 @@ public class Bai11 {
                 diem[i][j] = sc.nextDouble();
             }
         }
+        for (int i = 0; i < hs; i++){
+            for (int j = 0; j < mon; j++){
+                System.out.println( diem[i][j] +"\t" );
+
+            }
+            System.out.println();
+        }
+        for (int i = 0; i < hs; i++){
+            double tong = 0;
+            for (int j = 0; j < mon; j++){
+                tong += diem[i][j];
+
+            }
+            double diemTb = tong / mon;
+            System.out.println("Điểm trung bình hs " + (i + 1) + " = "+ diemTb);
+        }
+
     }
 }

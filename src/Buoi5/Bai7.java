@@ -12,7 +12,7 @@ public class Bai7 {
         String hoTen = sc.nextLine();
 
         hoTen = hoTen.trim();
-        String [] tu = hoTen.split("\\s+");
+        String [] tu = hoTen.split(" ");
 
         String ketQua = "";
         for (int i = 0; i < tu.length; i++){

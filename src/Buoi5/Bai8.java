@@ -19,7 +19,7 @@ public class Bai8 {
                 doiXung = false;
                 break;
             }
-        }
+        }//
         if (doiXung) {
             System.out.println("Chuỗi đối xứng");
         } else {
