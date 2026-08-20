@@ -108,11 +108,11 @@ class CheckingAccount extends Account{
 public class HeThongTaiKhoanNganHang {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Account[] accounts = new Account[2];
-        SavingAccount1 savingAccount = new SavingAccount1("Chung123", "Chung", 2000, 0.1);
-        CheckingAccount checkingAccount = new CheckingAccount("Nam123", "Nam", 5000, 0.1);
-        accounts[0] = savingAccount;
-        accounts[1] = checkingAccount;
+        Account[] accounts = {
+        new SavingAccount1("Chung123", "Chung", 2000, 0.1),
+        new CheckingAccount("Nam123", "Nam", 5000, 0.1)
+
+    };
 
         int chon;
         do {
