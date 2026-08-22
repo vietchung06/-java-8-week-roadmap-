@@ -2,7 +2,7 @@ package Buoi9;
 
 import java.util.Scanner;
 
-class Employee {
+abstract class Employee {
     String name;
 
     public Employee(String name) {
@@ -58,6 +58,8 @@ class FreelancerEmployee extends Employee{
 public class HeThongTinhLuongDaHinh {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+//        Employee e = new Employee("chung");      Employee là một abstract class nên không được
+//        System.out.println("Tên chủ : "+e.name);   phép tạo object trực tiếp bằng new Employee(...).
         System.out.print("Nhập số nhân viên : ");
         int n = sc.nextInt();
         sc.nextLine();
