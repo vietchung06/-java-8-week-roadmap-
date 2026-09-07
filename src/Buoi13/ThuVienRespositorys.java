@@ -46,6 +46,12 @@ class Student {
         return "Tên: "+ getName() + " - " + "Điêm: "+ getScore();
     }
 }
+class ProductNotFoundException extends RuntimeException {
+
+    public ProductNotFoundException(String message) {
+        super(message);
+    }
+}
 interface CrudRepository<T> {
     int save(T item);
     Optional<T> findById(int id);
@@ -68,9 +74,15 @@ class InMemoryRepositorys<T> implements CrudRepository<T> {
     @Override
     public Optional<T> findById(int id) {
 
-        return Optional.ofNullable(data.get(id));
-    }
+        T item = Optional.ofNullable(data.get(id))
+                .orElseThrow(() ->
+                        new ProductNotFoundException(
+                                "Không tìm thấy dữ liệu có id: " + id
+                        )
+                );
 
+        return Optional.of(item);
+    }
     @Override
     public List<T> findAll() {
 
@@ -99,9 +111,21 @@ public class ThuVienRespositorys {
         System.out.println("Id Student1: "+idp3);
 
         System.out.println("Danh sách sản phẩm");
-        System.out.println(p.findAll());
-        Optional<Product> product = p.findById(4);
-        System.out.println("Tìm id4 : " +product);
+        // Tìm id tồn tại
+        try {
+            Optional<Product> product = p.findById(2);
+            System.out.println("Tìm id 2: " + product);
+        } catch (ProductNotFoundException e) {
+            System.out.println(e.getMessage());
+        }
+
+        // Tìm id không tồn tại
+        try {
+            Optional<Product> product = p.findById(4);
+            System.out.println("Tìm id 4: " + product);
+        } catch (ProductNotFoundException e) {
+            System.out.println("Lỗi: " + e.getMessage());
+        }
         System.out.println("Số product: "+p.count());
         System.out.println("Xóa Product id 2: " + p.deleteById(2));
         System.out.println("Sau khi xóa: " + p.findAll());
@@ -119,8 +143,12 @@ public class ThuVienRespositorys {
         System.out.println("Id Student2: "+ids4);
         System.out.println("Danh sách sản phẩm");
         System.out.println(p.findAll());
-        Optional<Student> student = s.findById(1);
-        System.out.println("Tìm id1 : " +student);
+        try {
+            Optional<Student> student = s.findById(1);
+            System.out.println("Tìm id 1: " + student);
+        } catch (ProductNotFoundException e) {
+            System.out.println(e.getMessage());
+        }
         System.out.println("Số product: "+s.count());
         System.out.println("Xóa Product id 2: " + s.deleteById(2));
         System.out.println("Sau khi xóa: " + s.findAll());
