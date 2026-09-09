@@ -1,0 +1,30 @@
+USE thu_vien;
+CREATE TABLE books (
+id INT PRIMARY KEY AUTO_INCREMENT,
+author VARCHAR(100) NOT NULL,
+shelf_id INT
+);
+CREATE TABLE customers  (
+id INT PRIMARY KEY AUTO_INCREMENT,
+name VARCHAR(100) NOT NULL,
+phone VARCHAR(20)
+);
+CREATE TABLE employees (
+id INT PRIMARY KEY AUTO_INCREMENT,
+name VARCHAR(100) NOT NULL,
+email VARCHAR(200) UNIQUE
+);
+CREATE TABLE shelfs (
+id INT PRIMARY KEY AUTO_INCREMENT,
+shelf_name VARCHAR(100),
+position VARCHAR(50) NOT NULL 
+);
+CREATE TABLE borrow_records (
+id INT PRIMARY KEY AUTO_INCREMENT,
+customer_id INT,
+book_id INT
+
+);
+
+DESCRIBE borrow_records;
+SELECT * FROM borrow_records;
