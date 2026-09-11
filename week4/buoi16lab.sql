@@ -39,6 +39,7 @@ VALUES ('Chung', 'CN123@gmail.com', '0987654321');
 INSERT INTO orders  (customer_id, order_date, trangThai)
 VALUES (1,  '2026/8/9', 'Đang đặt đơn');
 
+
 SHOW TABLES;
 DESCRIBE categories;-- Xem cấu trúc bảng
 DESCRIBE products;

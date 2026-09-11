@@ -8,7 +8,7 @@ price DECIMAL(10,2) NOT NULL,
 quantity INT DEFAULT 0,
 created_at DATETIME 
 );
-
+-- DDL
 ALTER TABLE products 
 ADD COLUMN map TEXT;-- Thêm cột
 ALTER TABLE products
